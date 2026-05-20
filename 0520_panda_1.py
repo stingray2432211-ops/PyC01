@@ -1,18 +1,14 @@
 import pandas as pd
 import numpy as np
 
-# 1. 建立 stock1
 data = [120, 80, None, 60, 95, None, 110]
 stock1 = pd.Series(data)
 
-# 2. 建立 stock2
 indices = ['Apple', 'Banana', 'Orange', 'Mango', 'Grape', 'Peach', 'Melon']
 stock2 = pd.Series(data, index=indices)
 
-# 3. 建立 stock3
 stock3 = stock2.to_dict()
 
-# 輸出結果
 print("stock1")
 print(stock1)
 print("\nstock2")
